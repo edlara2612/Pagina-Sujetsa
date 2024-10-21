@@ -1,0 +1,42 @@
+.slidersujetsa{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+
+}
+.slidersujetsa ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: automatico 15s infinite alternate linear; 
+}
+.slidersujetsa li{
+    width: 100%;
+    list-style: none;
+
+}
+.slidersujetsa img{
+    width: 100% ;
+    height: 60vh;
+
+}
+@media(min-width: 500px){
+    .slidersujetsa img{
+        height: 720px;
+    }
+}
+@keyframes automatico{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
